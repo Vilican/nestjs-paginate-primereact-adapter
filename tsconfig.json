@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "module": "nodenext",
+        "declaration": true,
+        "target": "ES2019",
+        "outDir": "./dist",
+        "baseUrl": "./",
+        "strict": true
+    },
+    "include": [
+        "src/**/*"
+    ]
+}
