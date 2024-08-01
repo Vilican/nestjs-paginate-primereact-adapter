@@ -1,7 +1,9 @@
 import {DataTableStateEvent} from "primereact/datatable";
 import {sortOrders} from "./mappings/sortOrders";
 
-export const datatableToNest = (datatable: Readonly<DataTableStateEvent>): { [key: string]: unknown } => {
+export const datatableToNest = (datatable?: Readonly<DataTableStateEvent>): { [key: string]: unknown } => {
+
+    if (!datatable) return {};
 
     const filters: { [key: string]: string | string[] } = {};
 
