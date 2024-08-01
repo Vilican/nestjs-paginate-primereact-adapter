@@ -3,7 +3,8 @@ import {PagedObjectMeta} from "./schemas/PagedObjectMeta";
 import {filterOperators} from "./mappings/filterOperators";
 import {sortOrders} from "./mappings/sortOrders";
 
-export const nestToDatatable = <T extends DataTableValueArray>(meta?: Readonly<PagedObjectMeta>): DataTableProps<T> => {
+export const nestToDatatable = <T extends DataTableValueArray>(meta?: Readonly<PagedObjectMeta>):
+    Pick<DataTableProps<T>, "first" | "rows" | "totalRecords" | "filters" | "multiSortMeta" | "sortMode"> => {
 
     if (!meta) return {
         first: 0,
