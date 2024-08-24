@@ -10,6 +10,9 @@ module.exports = {
         'plugin:@typescript-eslint/strict-type-checked',
         'plugin:security/recommended-legacy'
     ],
+    rules: {
+        "@typescript-eslint/restrict-template-expressions": ["error", {allowNullish: true}]
+    },
     root: true,
     env: {
         browser: true,

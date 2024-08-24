@@ -1,4 +1,6 @@
+import {FilterMatchMode} from "primereact/api";
 import {DataTableStateEvent} from "primereact/datatable";
+import {filterOperators} from "./mappings/filterOperators";
 import {sortOrders} from "./mappings/sortOrders";
 
 export const datatableToNest = (datatable?: Readonly<DataTableStateEvent>): { [key: string]: unknown } => {
@@ -13,7 +15,7 @@ export const datatableToNest = (datatable?: Readonly<DataTableStateEvent>): { [k
 
         // One condition for given attribute
         if ("matchMode" in value && "value" in value && value.matchMode && value.value) {
-            filters[`filter.${key}`] = `$${value.matchMode}:${value.value}`;
+            filters[`filter.${key}`] = `${filterOperators.get(value.matchMode as FilterMatchMode)}:${value.value}`;
             continue;
         }
 
@@ -25,7 +27,7 @@ export const datatableToNest = (datatable?: Readonly<DataTableStateEvent>): { [k
                 // eslint-disable-next-line @typescript-eslint/ban-ts-comment, @typescript-eslint/prefer-ts-expect-error
                 // @ts-ignore
                 // eslint-disable-next-line @typescript-eslint/no-unsafe-call
-                filters[`filter.${key}`].push(`$${constraint.matchMode}:${constraint.value}`);
+                filters[`filter.${key}`].push(`${filterOperators.get(constraint.matchMode)}:${constraint.value}`);
             }
         }
 

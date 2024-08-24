@@ -1,6 +1,6 @@
 {
     "name": "@vilican/nestjs-paginate-primereact-adapter",
-    "description": "Adapter between nestjs-paginate and PrimeReact Datatable",
+    "description": "Adapter between nestjs-paginate and PrimeReact DataTable",
     "author": "Matyáš Koc <admin@sufix.cz> (https://github.com/Vilican)",
     "homepage": "https://github.com/Vilican/nestjs-paginate-primereact-adapter",
     "repository": {
@@ -16,7 +16,8 @@
         "/dist"
     ],
     "scripts": {
-        "build": "tsc"
+        "build": "tsc",
+        "lint": "eslint src/**/*.ts"
     },
     "dependencies": {
         "zod": "^3.23.8"
@@ -26,15 +27,15 @@
     },
     "devDependencies": {
         "@types/eslint-plugin-security": "^3.0.0",
-        "@typescript-eslint/eslint-plugin": "^7.17.0",
-        "@typescript-eslint/parser": "^7.17.0",
+        "@typescript-eslint/eslint-plugin": "^8.2.0",
+        "@typescript-eslint/parser": "^8.2.0",
         "eslint": "^8.57.0",
         "eslint-plugin-security": "^3.0.1",
-        "primereact": "^10.7.0",
+        "primereact": "^10.8.2",
         "react": "18.3.1",
         "react-dom": "^18.3.1",
         "typescript": "^5.5.4"
     },
     "license": "GPL-3.0-only",
-    "packageManager": "yarn@4.3.1"
+    "packageManager": "yarn@4.4.0"
 }
