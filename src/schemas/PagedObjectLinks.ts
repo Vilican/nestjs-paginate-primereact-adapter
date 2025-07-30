@@ -4,11 +4,11 @@ import z from "zod";
  * Schema of the object containing links to other pages.
  */
 export const PagedObjectLinksSchema = z.object({
-    first: z.string().url().optional(),
-    previous: z.string().url().optional(),
-    current: z.string().url().optional(),
-    next: z.string().url().optional(),
-    last: z.string().url().optional()
+    first: z.url().optional(),
+    previous: z.url().optional(),
+    current: z.url().optional(),
+    next: z.url().optional(),
+    last: z.url().optional()
 });
 
 /**
