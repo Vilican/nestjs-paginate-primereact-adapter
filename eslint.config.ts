@@ -1,9 +1,10 @@
+import {defineConfig} from "eslint/config";
 import globals from "globals";
 import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
 import pluginSecurity from "eslint-plugin-security";
 
-export default tseslint.config(
+export default defineConfig(
     eslint.configs.recommended,
     tseslint.configs.strictTypeChecked,
     pluginSecurity.configs.recommended,
@@ -11,7 +12,7 @@ export default tseslint.config(
         languageOptions: {
             globals: {
                 ...globals.browser,
-                ...globals.es2021
+                ...globals.es2022
             },
             sourceType: "module",
             parserOptions: {

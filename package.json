@@ -3,6 +3,9 @@
     "description": "Adapter between nestjs-paginate and PrimeReact DataTable",
     "author": "Matyáš Koc <admin@sufix.cz> (https://github.com/Vilican)",
     "homepage": "https://github.com/Vilican/nestjs-paginate-primereact-adapter",
+    "publishConfig": {
+        "access": "public"
+    },
     "repository": {
         "type": "git",
         "url": "https://github.com/Vilican/nestjs-paginate-primereact-adapter"
@@ -20,24 +23,25 @@
         "lint": "eslint src/**/*.ts"
     },
     "dependencies": {
-        "zod": "^4.1.12"
+        "zod": "^4.3.6"
     },
     "peerDependencies": {
         "primereact": "^10.9.7"
     },
     "devDependencies": {
-        "@eslint/js": "^9.37.0",
-        "@types/eslint-plugin-security": "^3.0.0",
-        "@types/react": "^18.3.25",
-        "eslint": "^9.37.0",
-        "eslint-plugin-security": "^3.0.1",
+        "@eslint/js": "^10.0.1",
+        "@types/eslint-plugin-security": "^3.0.1",
+        "@types/react": "^19.2.14",
+        "eslint": "^10.2.0",
+        "eslint-plugin-security": "^4.0.0",
+        "globals": "^17.4.0",
         "jiti": "^2.6.1",
         "primereact": "^10.9.7",
-        "react": "^18.3.1",
-        "react-dom": "^18.3.1",
-        "typescript": "^5.9.3",
-        "typescript-eslint": "^8.46.0"
+        "react": "^19.2.5",
+        "react-dom": "^19.2.5",
+        "typescript": "^6.0.2",
+        "typescript-eslint": "^8.58.1"
     },
     "license": "GPL-3.0-only",
-    "packageManager": "yarn@4.10.3"
+    "packageManager": "yarn@4.13.0"
 }
