@@ -23,7 +23,7 @@
         "lint": "eslint src/**/*.ts"
     },
     "dependencies": {
-        "zod": "^4.3.6"
+        "zod": "^4.5.4"
     },
     "peerDependencies": {
         "primereact": "^10.9.7"
@@ -31,17 +31,17 @@
     "devDependencies": {
         "@eslint/js": "^10.0.1",
         "@types/eslint-plugin-security": "^3.0.1",
-        "@types/react": "^19.2.14",
-        "eslint": "^10.2.0",
-        "eslint-plugin-security": "^4.0.0",
-        "globals": "^17.4.0",
-        "jiti": "^2.6.1",
-        "primereact": "^10.9.7",
-        "react": "^19.2.5",
-        "react-dom": "^19.2.5",
-        "typescript": "^6.0.2",
-        "typescript-eslint": "^8.58.1"
+        "@types/react": "^19.2.18",
+        "eslint": "^10.10.0",
+        "eslint-plugin-security": "^4.0.1",
+        "globals": "^17.12.0",
+        "jiti": "^2.7.0",
+        "primereact": "^10.9.9",
+        "react": "^19.2.8",
+        "react-dom": "^19.2.8",
+        "typescript": "^6.0.3",
+        "typescript-eslint": "^8.69.0"
     },
     "license": "GPL-3.0-only",
-    "packageManager": "yarn@4.13.0"
+    "packageManager": "yarn@4.18.0"
 }
